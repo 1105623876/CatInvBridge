@@ -1,0 +1,226 @@
+[
+  {
+    "type": "ExtrudeFeature",
+    "name": "ExtrudeFeature_1",
+    "operation": "kJoinOperation",
+    "isTwoDirectional": false,
+    "profile": {
+      "SketchPlane": {
+        "geometry": {
+          "origin": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "normal": {
+            "x": -0.13908516180266556,
+            "y": -0.3265525309945037,
+            "z": -0.9348897059372352
+          },
+          "axis_x": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "axis_y": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          }
+        }
+      },
+      "ProfilePaths": [
+        {
+          "PathEntities": [
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": -128.0,
+                "y": -128.0
+              },
+              "EndSketchPoint": {
+                "x": 95.0,
+                "y": 0.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 95.0,
+                "y": 0.0
+              },
+              "EndSketchPoint": {
+                "x": 95.0,
+                "y": 67.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 95.0,
+                "y": 67.0
+              },
+              "EndSketchPoint": {
+                "x": 75.0,
+                "y": 67.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 75.0,
+                "y": 67.0
+              },
+              "EndSketchPoint": {
+                "x": 75.0,
+                "y": 34.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 75.0,
+                "y": 34.0
+              },
+              "EndSketchPoint": {
+                "x": 20.0,
+                "y": 34.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 20.0,
+                "y": 34.0
+              },
+              "EndSketchPoint": {
+                "x": 20.0,
+                "y": 67.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 20.0,
+                "y": 67.0
+              },
+              "EndSketchPoint": {
+                "x": 0.0,
+                "y": 67.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 0.0,
+                "y": 67.0
+              },
+              "EndSketchPoint": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "extentType": "kDistanceExtent",
+    "extent": {
+      "distance": {
+        "value": 175.0
+      },
+      "direction": "kPositiveExtentDirection"
+    },
+    "extentTwo": null
+  },
+  {
+    "type": "ExtrudeFeature",
+    "name": "ExtrudeFeature_2",
+    "operation": "kJoinOperation",
+    "isTwoDirectional": false,
+    "profile": {
+      "SketchPlane": {
+        "geometry": {
+          "origin": {
+            "x": 76.0,
+            "y": -32.0,
+            "z": 68.0
+          },
+          "normal": {
+            "x": -0.49960401705353136,
+            "y": 0.5198953799655789,
+            "z": -0.6928958219201651
+          },
+          "axis_x": {
+            "x": 1,
+            "y": 0,
+            "z": 0
+          },
+          "axis_y": {
+            "x": 0,
+            "y": 1,
+            "z": 0
+          }
+        }
+      },
+      "ProfilePaths": [
+        {
+          "PathEntities": [
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": -128.0,
+                "y": -128.0
+              },
+              "EndSketchPoint": {
+                "x": 95.0,
+                "y": 0.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 95.0,
+                "y": 0.0
+              },
+              "EndSketchPoint": {
+                "x": 95.0,
+                "y": 91.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 95.0,
+                "y": 91.0
+              },
+              "EndSketchPoint": {
+                "x": 0.0,
+                "y": 91.0
+              }
+            },
+            {
+              "CurveType": "kLineSegmentCurve2d",
+              "StartSketchPoint": {
+                "x": 0.0,
+                "y": 91.0
+              },
+              "EndSketchPoint": {
+                "x": 0.0,
+                "y": 0.0
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "extentType": "kDistanceExtent",
+    "extent": {
+      "distance": {
+        "value": 109.0
+      },
+      "direction": "kPositiveExtentDirection"
+    },
+    "extentTwo": null
+  }
+]

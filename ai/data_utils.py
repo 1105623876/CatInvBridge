@@ -1,27 +1,28 @@
-import random
 import numpy as np
+import torch
 
-def generate_random_extrude_pair():
+def clean_and_normalize_vector(vec):
     """
-    随机生成一个『拉伸』特征的成对数据
+    人为‘净化’向量，模拟理想的参数。
+    比如：把靠近 128.0 的值强制设为 128.0，模拟‘对齐’。
     """
-    # 1. 随机产生理想参数
-    w = random.uniform(5.0, 50.0)
-    h = random.uniform(5.0, 50.0)
-    dist = random.uniform(10.0, 100.0)
+    cmd = vec[0]
+    args = vec[1:]
     
-    # 2. 模拟 CATIA 侧：加入量化噪声 (模拟 0-255 的离散感)
-    cat_w = round(w * 2.5) / 2.5 
-    cat_dist = round(dist * 2.5) / 2.5
-    cat_vec = np.zeros(33)
-    cat_vec[0] = 7 # Extrude
-    cat_vec[13] = cat_dist # 假设的距离位
+    # 模拟净化：将坐标四舍五入到最近的规整值
+    # 这样模型能学会从‘脏数据’恢复到‘干净数据’
+    clean_args = np.round(args) 
     
-    # 3. 模拟 Inventor 侧：理想的连续值 JSON
-    inv_json_params = {
-        "distance": dist,
-        "width": w,
-        "height": h
-    }
+    return np.concatenate([[cmd], clean_args])
+
+def create_training_pair(original_vec):
+    """
+    生成一个训练对：(带噪声的输入, 干净的目标)
+    """
+    # 输入：原始 H5 里的数据（已经有量化噪声了）
+    x = original_vec.copy()
     
-    return cat_vec, inv_json_params
+    # 目标：我们希望它变成的样子（更规整的数值）
+    y = clean_and_normalize_vector(original_vec)
+    
+    return x, y

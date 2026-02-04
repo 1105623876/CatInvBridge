@@ -35,8 +35,8 @@
             {
               "CurveType": "kLineSegmentCurve2d",
               "StartSketchPoint": {
-                "x": -128.0,
-                "y": -128.0
+                "x": 0.0,
+                "y": 0.0
               },
               "EndSketchPoint": {
                 "x": 95.0,
@@ -169,8 +169,8 @@
             {
               "CurveType": "kLineSegmentCurve2d",
               "StartSketchPoint": {
-                "x": -128.0,
-                "y": -128.0
+                "x": 0.0,
+                "y": 0.0
               },
               "EndSketchPoint": {
                 "x": 95.0,
